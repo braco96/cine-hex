@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import org.springframework.data.jpa.repository.JpaRepository; import java.util.List; public interface SpringEntradaRepository extends JpaRepository<JpaEntrada,Long>{ boolean existsBySesionIdAndFilaAndColumna(Long sesionId,int fila,int columna); List<JpaEntrada> findBySesionId(Long sesionId); }

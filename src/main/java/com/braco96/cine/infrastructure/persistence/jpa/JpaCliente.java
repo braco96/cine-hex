@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import jakarta.persistence.*; @Entity @Table(name="clientes") public class JpaCliente { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; public String nombre; @Column(unique=true) public String email; }

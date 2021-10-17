@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import jakarta.persistence.*; @Entity @Table(name="salas") public class JpaSala { @Id public String id; public int filas; @Column(name="butacas_por_fila") public int butacasPorFila; }

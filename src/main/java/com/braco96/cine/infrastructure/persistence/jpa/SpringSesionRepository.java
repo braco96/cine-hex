@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import org.springframework.data.jpa.repository.JpaRepository; import java.time.LocalDateTime; public interface SpringSesionRepository extends JpaRepository<JpaSesion,Long>{ boolean existsBySalaIdAndFechaHora(String salaId, LocalDateTime fechaHora); }

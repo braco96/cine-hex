@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import jakarta.persistence.*; @Entity @Table(name="cuentas") public class JpaCuenta { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @Column(name="cliente_id",unique=true) public Long clienteId; public double saldo; }

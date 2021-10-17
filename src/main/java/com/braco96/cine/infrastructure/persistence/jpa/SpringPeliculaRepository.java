@@ -1,0 +1,1 @@
+package com.braco96.cine.infrastructure.persistence.jpa; import org.springframework.data.jpa.repository.JpaRepository; import java.util.Optional; public interface SpringPeliculaRepository extends JpaRepository<JpaPelicula,Long>{ Optional<JpaPelicula> findByTitulo(String titulo); }
